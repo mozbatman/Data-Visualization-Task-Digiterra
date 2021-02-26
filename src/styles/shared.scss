@@ -1,0 +1,72 @@
+@import "./variables.scss";
+
+.container{
+    width: 85vw;
+    min-height: 90vh;
+    background-color: $background;
+    margin: $margin-size-2 $margin-size-2;
+    padding: 0 $margin-size-2;
+    border-radius: 30px;
+}
+
+.header {
+    width: 100%;
+    height: $header-size;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid $text-color;
+
+    .title{
+        font-size: $text-size-bigish;
+        font-weight: 600;
+    }
+
+    .owner{
+        color: $text-color;
+        font-size: $text-size-small;
+        display: flex;
+        align-items: center;
+
+        .icon{
+            font-size: $text-size-bigish;
+            margin-left: $margin-size-2;
+        }
+    }
+}
+
+.main-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: $margin-size-2;
+    row-gap: $margin-size-2;
+    padding: $margin-size-2;
+
+    .numerical-data{
+        background-color: $white;
+        .text{
+            font-size: $text-size-big;
+            text-align: center;
+        }
+        .data{
+            width: 100%;
+            text-align: center;
+            font-size: $text-size-biggest;
+        }
+    }
+
+    .line-data{
+        background-color: $white;
+    }
+    .pie-data{
+        background-color: $white;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .main-container {
+      grid-template-columns: 90%;
+      align-self: center;
+      justify-content: center;
+    }
+  }
