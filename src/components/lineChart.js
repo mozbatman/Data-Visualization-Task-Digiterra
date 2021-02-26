@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Pie, Line } from 'react-chartjs-2';
+import { Line } from 'react-chartjs-2';
 
 export default class LineChart extends Component{
     lineRef;
@@ -15,8 +15,8 @@ export default class LineChart extends Component{
     componentWillUnmount() {}
 
     componentDidUpdate(prevProps, prevState) {
-        if (this.props != prevProps){
-            if(this.lineRef.chartInstance != undefined){
+        if (this.props !== prevProps){
+            if(this.lineRef.chartInstance !== undefined){
                 this.lineRef.chartInstance.update(); 
             }    
         }

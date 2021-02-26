@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Pie, Line } from 'react-chartjs-2';
+import { Pie } from 'react-chartjs-2';
 
 export default class PieChart extends Component{
     constructor(props) {

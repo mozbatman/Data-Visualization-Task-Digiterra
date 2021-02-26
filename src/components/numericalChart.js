@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Pie, Line } from 'react-chartjs-2';
 
 export default class LineChart extends Component{
     lineRef;
